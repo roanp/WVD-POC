@@ -1,0 +1,150 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "artifactsLocation": {
+            "value": "https://wvdportalstorageblob.blob.core.windows.net/galleryartifacts/Configuration_9-11-2020.zip"
+        },
+        "nestedTemplatesLocation": {
+            "value": "https://catalogartifact.azureedge.net/publicartifacts/Microsoft.Hostpool-ARM-1.0.15-preview/"
+        },
+        "hostpoolName": {
+            "value": "RP-Desktop"
+        },
+        "hostpoolDescription": {
+            "value": "Created through the WVD extension"
+        },
+        "location": {
+            "value": "eastus"
+        },
+        "validationEnvironment": {
+            "value": false
+        },
+        "addToWorkspace": {
+            "value": true
+        },
+        "hostpoolType": {
+            "value": "Pooled"
+        },
+        "loadBalancerType": {
+            "value": "DepthFirst"
+        },
+        "customRdpProperty": {
+            "value": ""
+        },
+        "vmTemplate": {
+            "value": "{\"domain\":\"rpaes.corp\",\"galleryImageOffer\":\"office-365\",\"galleryImagePublisher\":\"MicrosoftWindowsDesktop\",\"galleryImageSKU\":\"20h1-evd-o365pp\",\"imageType\":\"Gallery\",\"imageUri\":null,\"customImageId\":null,\"namePrefix\":\"RPWVDH\",\"osDiskType\":\"StandardSSD_LRS\",\"useManagedDisks\":true,\"vmSize\":{\"id\":\"Standard_B2ms\",\"cores\":2,\"ram\":8},\"galleryItemId\":\"MicrosoftWindowsDesktop.office-36520h1-evd-o365pp\"}"
+        },
+        "tokenExpirationTime": {
+            "value": "2020-10-11T08:07:28.358Z"
+        },
+        "administratorAccountUsername": {
+            "value": "rpaes.la@rpaes.corp"
+        },
+        "administratorAccountPassword": {
+            "value": null
+        },
+        "createAvailabilitySet": {
+            "value": true
+        },
+        "vmResourceGroup": {
+            "value": "RG-EUS-Core-Infra"
+        },
+        "vmLocation": {
+            "value": "eastus"
+        },
+        "vmSize": {
+            "value": "Standard_B2ms"
+        },
+        "vmNumberOfInstances": {
+            "value": 2
+        },
+        "vmNamePrefix": {
+            "value": "RPWVDH"
+        },
+        "vmImageType": {
+            "value": "Gallery"
+        },
+        "vmDiskType": {
+            "value": "StandardSSD_LRS"
+        },
+        "vmUseManagedDisks": {
+            "value": true
+        },
+        "existingVnetName": {
+            "value": "Vnet-P-10.13.0.0-18"
+        },
+        "existingSubnetName": {
+            "value": "Subnet-WVD"
+        },
+        "virtualNetworkResourceGroupName": {
+            "value": "RG-EUS-Core-Infra"
+        },
+        "usePublicIP": {
+            "value": false
+        },
+        "createNetworkSecurityGroup": {
+            "value": false
+        },
+        "domain": {
+            "value": "Rpaes.Corp"
+        },
+        "ouPath": {
+            "value": "OU=WindowsVirtualDesktopServers,OU=Servers,OU=RoanPaesTech,DC=Rpaes,DC=Corp"
+        },
+        "hostpoolTags": {
+            "value": {}
+        },
+        "applicationGroupTags": {
+            "value": {}
+        },
+        "availabilitySetTags": {
+            "value": {}
+        },
+        "networkInterfaceTags": {
+            "value": {}
+        },
+        "networkSecurityGroupTags": {
+            "value": {}
+        },
+        "publicIPAddressTags": {
+            "value": {}
+        },
+        "virtualMachineTags": {
+            "value": {}
+        },
+        "imageTags": {
+            "value": {}
+        },
+        "apiVersion": {
+            "value": "2019-12-10-preview"
+        },
+        "deploymentId": {
+            "value": "6f68388f-a77e-4bab-9a6a-fb952e7ac0c4"
+        },
+        "vmGalleryImageOffer": {
+            "value": "office-365"
+        },
+        "vmGalleryImagePublisher": {
+            "value": "MicrosoftWindowsDesktop"
+        },
+        "vmGalleryImageSKU": {
+            "value": "20h1-evd-o365pp"
+        },
+        "maxSessionLimit": {
+            "value": 4
+        },
+        "workspaceResourceGroup": {
+            "value": "RG-EUS-Core-Infra"
+        },
+        "workspaceName": {
+            "value": "RP-Desktop"
+        },
+        "workspaceLocation": {
+            "value": "eastus"
+        },
+        "allApplicationGroupReferences": {
+            "value": ""
+        }
+    }
+}
